@@ -294,6 +294,20 @@ ul {
 
 .athlete__left {
     width: 50%;
+    position: relative;
+}
+
+.athlete__left img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.athlete__left img:nth-child(2) {
+    position: absolute;
+    z-index: 5;
+    left: 53.3%;
+    top: 66%;
 }
 
 .athlete__right {
@@ -320,6 +334,15 @@ ul {
     display: flex;
     text-align: left;
     margin-bottom: 27px;
+}
+
+.content__item__athlete {
+    color: rgba(18, 18, 18, 0.70);
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
 }
 
 .places {
@@ -394,4 +417,16 @@ ul {
 
 .form__input::placeholder {
     color: #999B9D;
+}
+
+.places__right {
+    width: 51%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.places__right img {
+    height: 535px;
 }
