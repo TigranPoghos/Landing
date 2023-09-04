@@ -1,0 +1,1 @@
+$('.offer__link-2').slick();
