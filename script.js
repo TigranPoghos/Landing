@@ -173,7 +173,123 @@
 // }
 
 
-let value = prompt("Введите число", '')
-for (let index=value; index>=0; index--) {
-    console.log(index)
+// let value = prompt("Введите число", '')
+// for (let index=value; index>=0; index--) {
+//     console.log(index)
+// }
+
+
+
+
+
+                    //Массивы
+
+// let array = new Array()
+
+// let ar = [1,2,"Test", true]
+// console.log(ar.length) //длина массива 
+
+// let arr = []
+// arr[0]=12
+// arr[1]=14
+// console.log(arr)
+
+// let array = [10,15,12,14,15,16,123,6123,12341]
+
+// let sum = 0
+
+// for (let index = 0; index < array.length; index++) {
+//     sum += array[index]
+// }
+
+// console.log(sum)
+
+
+
+                    //Методы массивов
+
+// 1. indexOf (выдает индекс переменного)
+// let array = [10,15,12,14,15,16,123,6123,12341,123]
+// let indexof = array.indexOf(123,[7]) //стартовая позиция//
+// console.log(indexof)
+
+// 2. lastIndexOf
+// let lastindex = array.lastIndexOf(12)
+// console.log(lastindex)
+
+
+                    // Задание 1
+
+// let array = [12,15,12,12,51,5123,5123]
+// let sum = 0
+// let indexof = array.indexOf(12)
+
+// while(indexof != -1) {
+//     sum++
+//     indexof = array.indexOf(12,indexof+1)
+// }
+
+// console.log(sum)
+
+
+// 3. .sort (соортировка)
+// let array = [12,15,12,12,51,5123,5123]
+// array = [5235,4214,-22,-42,10,11,10.5,342,2356,0]
+// console.log(array.sort())
+
+// function compareValue(a,b){
+//     if(a>b){
+//         return 1
+//     }
+//     else if (a<b){
+//         return -1
+//     } else return 0
+// }
+
+// console.log(array.sort(compareValue))
+
+
+// 4. split (строка в массив)
+// let string = "Яблоко апельсин виноград"
+// string = string.split(" ")
+// // string.split(separator)
+// // console.log(string.split(" "))
+// // console.log(string)
+
+// 5. join (массив в строку)
+// console.log(string.join())
+
+
+                    // Задание
+let newArray = [23,1234,32,1,23,4,87,324,7856,234,23]
+// let sum = 0
+
+// function alertArray(arr){
+//     for (let index = 0; index < arr.length; index++) {
+//         if (index % 2 == 0)
+//             console.log(arr[index])
+//             sum += arr[index]
+//     }
+//     console.log(`Сумма массива равна ${sum}`)
+// }
+
+// alertArray(newArray)
+
+
+
+
+
+function compareValue(a,b){
+    if(a>b){
+        return 1
+    }
+    else if (a<b){
+        return -1
+    } else return 0
 }
+
+console.log(newArray.sort(compareValue))
+
+console.log(newArray.length)
+console.log(newArray[10])
+ 
