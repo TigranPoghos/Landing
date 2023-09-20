@@ -279,17 +279,62 @@ let newArray = [23,1234,32,1,23,4,87,324,7856,234,23]
 
 
 
-function compareValue(a,b){
-    if(a>b){
-        return 1
-    }
-    else if (a<b){
-        return -1
-    } else return 0
-}
+// function compareValue(a,b){
+//     if(a>b){
+//         return 1
+//     }
+//     else if (a<b){
+//         return -1
+//     } else return 0
+// }
 
-console.log(newArray.sort(compareValue))
+// console.log(newArray.sort(compareValue))
 
-console.log(newArray.length)
-console.log(newArray[10])
+// console.log(newArray.length)
+// console.log(newArray[10])
  
+
+
+
+
+
+// let str = 'Какая-\tто текстовая \"надпись"';
+// str = 'Какая- то текстовая "надпись"'
+// alert(str)
+// console.log(str[5])
+// console.log(str.length)
+// console.log(str.charAt(5))
+// console.log(str.toLowerCase())
+// console.log(str.toUpperCase())
+// console.log(str.indexOf("ая"))
+// console.log(str.lastIndexOf("ая"))
+
+// let subtst = str.substring()
+// console.log(subtst)
+
+
+
+// setTimeout(function(){
+//     alert("hello")
+// }, 1000)
+
+// setTimeout(
+//     function(){
+//     },
+//     1000
+// )
+
+// setInterval(function(){
+//     alert("hello")
+// }, 1000)
+
+let timer = setInterval(boom,1000)
+let counter = 0
+function boom(){
+    console.log(counter)
+    counter++
+    if (counter>3){
+        clearInterval(timer)
+        return
+    }
+}
